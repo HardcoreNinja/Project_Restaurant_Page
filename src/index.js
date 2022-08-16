@@ -1,1 +1,2 @@
-import './pageLoad.js';
+import './createGridRows.js';
+import './addNavButtons.js';
