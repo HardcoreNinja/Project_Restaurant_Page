@@ -1,7 +1,7 @@
 import './style.css';
 
 
-function addNavButtons(){
+function createNav(){
     const nav = document.querySelector("#nav");
     const logo = document.querySelector("#logo");
     
@@ -24,4 +24,4 @@ function addNavButtons(){
     logo.append(logoDiv);
 }
 
-addNavButtons();
+createNav();
