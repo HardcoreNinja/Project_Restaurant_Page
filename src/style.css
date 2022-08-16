@@ -16,14 +16,24 @@
 #content{
   display: grid; 
   grid-template-rows: 1fr 7fr;
+  grid-template-columns: 1fr 7fr;
   grid-template-areas:
-  "nav"
-  "body"
+  "logo nav"
+  "body body"
   ;
   min-width: 100vw;
   min-height: 100vh;
   max-width: 100vw;
   max-height: 100vh;
+}
+
+#logo{
+  grid-area: logo;
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: center center;
+  background: rgb(36, 41, 46);
+  padding: 10px;
 }
 
 #nav{
@@ -35,6 +45,15 @@
   place-items: flex-end center;
   gap: 2vw;
 }
+
+.logo{
+  background-image:  url('./logo.svg');
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+}
+ 
 
 .navButton{
   background: rgb(214, 0, 107); 
@@ -49,6 +68,7 @@
   transform: scale(1.2);
   border-color: rgb(0, 145, 200);
   box-shadow: 2px 2px 2px 2px rgba(0, 145, 200, 0.5);
+  background: rgb(132, 17, 74); 
 }
 
 #body{
