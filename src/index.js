@@ -1,2 +1,2 @@
-import './createGridRows.js';
+import './createGrid.js';
 import './createNav.js';

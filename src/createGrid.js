@@ -1,7 +1,6 @@
 import './style.css';
 
-
-function createGridRows() {
+function createGrid() {
   const content = document.querySelector("#content");
 
   const logo = document.createElement("div");
@@ -13,8 +12,8 @@ function createGridRows() {
   const body = document.createElement("div");
   body.setAttribute("id", "body");
   body.innerHTML = "body";
-  
+
   content.append(logo, nav, body);
 }
 
-createGridRows();
+createGrid();
