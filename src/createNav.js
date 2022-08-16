@@ -2,10 +2,6 @@ import './style.css';
 
 function createNav() {
     const nav = document.querySelector("#nav");
-    const logo = document.querySelector("#logo");
-
-    let logoDiv = document.createElement("div");
-    logoDiv.classList.add("logo");
 
     let home = document.createElement("button");
     home.innerHTML = "Home";
@@ -20,7 +16,6 @@ function createNav() {
     contact.classList.add("navButton");
 
     nav.append(home, menu, contact);
-    logo.append(logoDiv);
 }
 
 createNav();
