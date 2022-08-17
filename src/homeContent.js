@@ -1,4 +1,3 @@
-import './style.css';
 function createHomeContent() {
     const body = document.querySelector("#body");
 

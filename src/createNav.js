@@ -1,6 +1,7 @@
 import './style.css';
 import { createHomeContent } from './homeContent.js';
 import { createMenuContent } from './menuContent.js';
+import { createContactContent } from './contactContent.js';
 
 function createNav() {
     const nav = document.querySelector("#nav");
@@ -18,6 +19,7 @@ function createNav() {
     let contact = document.createElement("button");
     contact.innerHTML = "Contact";
     contact.classList.add("navButton");
+    contact.addEventListener("mousedown", createContactContent);
 
     nav.append(home, menu, contact);
 }
