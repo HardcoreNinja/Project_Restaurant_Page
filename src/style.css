@@ -3,22 +3,22 @@
   src: url('./fonts/Lato-Light.ttf') format('woff2');
 }
 
-:root{
+:root {
   background: orange;
-}  
+}
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   font-family: 'Lato';
 }
 
-#content{
-  display: grid; 
+#content {
+  display: grid;
   grid-template-rows: 1fr 10fr;
   grid-template-areas:
-  "nav"
-  "body"
+    "nav"
+    "body"
   ;
   min-width: 100vw;
   min-height: 100vh;
@@ -26,7 +26,7 @@
   max-height: 100vh;
 }
 
-#nav{
+#nav {
   grid-area: nav;
   background: rgb(36, 41, 46);
   display: flex;
@@ -36,23 +36,23 @@
   gap: 2vw;
 }
 
-.navButton{
-  background: rgb(214, 0, 107); 
-  width: 100px; 
+.navButton {
+  background: rgb(214, 0, 107);
+  width: 100px;
   height: 50px;
   border-radius: 5px;
   transition: 0.75s;
   border: 1px solid black;
 }
 
-.navButton:hover{
+.navButton:hover {
   transform: scale(1.2);
   border-color: rgb(0, 145, 200);
   box-shadow: 2px 2px 2px 2px rgba(0, 145, 200, 0.5);
-  background: rgb(0, 145, 200); 
+  background: rgb(0, 145, 200);
 }
 
-#body{
+#body {
   grid-area: body;
   background: rgb(47, 54, 61);
   display: flex;
@@ -62,20 +62,20 @@
   padding: 20px;
 }
 
-.bodyContainer{
-display: flex;
-flex-flow: column wrap;
-min-width: 42vw;
-min-height: 100%;
-place-content: center flex-start;
-place-items: center flex-start;
-border-radius: 10px;
-background: rgb(36, 41, 46); 
-padding: 10px;
-gap: 20px;
+.bodyContainer {
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 42vw;
+  min-height: 100%;
+  place-content: center flex-start;
+  place-items: center flex-start;
+  border-radius: 10px;
+  background: rgb(36, 41, 46);
+  padding: 10px;
+  gap: 20px;
 }
 
-.logoContainer{
+.logoContainer {
   background-image: url("./logo.svg");
   background-size: cover;
   background-position: center;
@@ -83,9 +83,9 @@ gap: 20px;
   height: 150px;
 }
 
-.contentContainer{
-  background: rgb(47, 54, 61); 
-  border: 1px solid rgb(132, 17, 74); 
+.contentContainer {
+  background: rgb(47, 54, 61);
+  border: 1px solid rgb(132, 17, 74);
   display: flex;
   place-content: flex-start center;
   place-content: flex-start center;
@@ -100,14 +100,71 @@ gap: 20px;
   transition: 0.75s;
 }
 
-.contentContainer:hover{
+.contentContainer:hover {
   transform: scale(1.1);
   border-color: rgb(0, 145, 200);
   box-shadow: 2px 2px 2px 2px rgba(0, 145, 200, 0.5);
-  background: rgb(0, 145, 200); 
+  background: rgb(0, 145, 200);
 }
 
-.contentContainer>h1{
+.contentContainer>h1 {
   font-family: "Lato";
   font-weight: normal;
+}
+
+.menuImage1 {
+  border: 1px solid rgb(132, 17, 74);
+  min-width: 300px;
+  transition: 0.75s;
+  height: 200px;
+  background-image: url('./ramen1.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 450px;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+  transition: 0.75s;
+}
+
+.menuImage2 {
+  border: 1px solid rgb(132, 17, 74);
+  min-width: 300px;
+  transition: 0.75s;
+  height: 200px;
+  background-image: url('./ramen2.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 450px;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+  transition: 0.75s;
+}
+
+.menuImage3 {
+  border: 1px solid rgb(132, 17, 74);
+  min-width: 300px;
+  transition: 0.75s;
+  height: 200px;
+  background-image: url('./ramen3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  max-width: 450px;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+  transition: 0.75s;
+}
+
+.menuImage1:hover,
+.menuImage2:hover,
+.menuImage3:hover {
+  transform: scale(1.1);
+  border-color: rgb(0, 145, 200);
+  box-shadow: 2px 2px 2px 2px rgba(0, 145, 200, 0.5);
 }

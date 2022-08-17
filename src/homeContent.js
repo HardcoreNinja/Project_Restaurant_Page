@@ -1,14 +1,15 @@
+import './style.css';
+function createHomeContent() {
+    const body = document.querySelector("#body");
 
-function createHomeContent(){
-    const body = document.querySelector("#body"); 
+    while (body.firstChild)
+        body.removeChild(body.firstChild);
 
     let bodyContainer = document.createElement("div");
     bodyContainer.classList.add("bodyContainer");
 
     let logoContainer = document.createElement("div");
     logoContainer.classList.add("logoContainer");
-
-   
 
     let content1 = document.createElement("div");
     content1.classList.add("contentContainer");
@@ -36,8 +37,10 @@ function createHomeContent(){
 
     bodyContainer.append(logoContainer, content1, content2, content3);
     body.append(bodyContainer);
-
-
 }
 
 createHomeContent();
+
+export {
+    createHomeContent
+};
