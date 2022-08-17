@@ -67,12 +67,15 @@
   display: flex;
   flex-flow: column wrap;
   min-width: 362px;
-  min-height: 100%;
+  max-width: 362px;
+  min-height: 868px;
+  max-height: 900px;
   place-content: center flex-start;
   place-items: center flex-start;
   border-radius: 10px;
   background: rgb(36, 41, 46);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   gap: 20px;
 }
 
@@ -115,9 +118,10 @@
 
 .menuImage1 {
   border: 1px solid rgb(132, 17, 74);
-  min-width: 300px;
+  min-width: 250px;
   transition: 0.75s;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   background-image: url('./ramen1.jpg');
   background-size: cover;
   background-position: center;
@@ -131,9 +135,10 @@
 
 .menuImage2 {
   border: 1px solid rgb(132, 17, 74);
-  min-width: 300px;
+  min-width: 250px;
   transition: 0.75s;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   background-image: url('./ramen2.jpg');
   background-size: cover;
   background-position: center;
@@ -147,9 +152,10 @@
 
 .menuImage3 {
   border: 1px solid rgb(132, 17, 74);
-  min-width: 300px;
+  min-width: 250px;
   transition: 0.75s;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   background-image: url('./ramen3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,7 +196,7 @@ form {
 .inputContainer>input {
   background: rgb(36, 41, 46);
   border: 1px solid rgb(132, 17, 74);
-  transition: 1.1s;
+  transition: 0.75s;
   border-radius: 5px;
   color: white;
 }
@@ -203,7 +209,7 @@ form {
   color: white;
   background: rgb(36, 41, 46);
   border: 1px solid rgb(132, 17, 74);
-
+  transition: 0.75s;
 }
 
 .inputContainer>input:hover,
@@ -212,6 +218,7 @@ form {
 .inputContainer>.message:focus {
   transform: scale(1.1);
   border-color: rgb(0, 145, 200);
+  box-shadow: 2px 2px 2px 2px rgba(0, 145, 200, 0.5);
 }
 
 .submitButton {
