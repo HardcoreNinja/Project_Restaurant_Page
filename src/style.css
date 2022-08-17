@@ -4,7 +4,7 @@
 }
 
 :root {
-  background: orange;
+  background: black;
 }
 
 * {
@@ -59,13 +59,14 @@
   place-content: center center;
   place-items: center center;
   flex-flow: row wrap;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .bodyContainer {
   display: flex;
   flex-flow: column wrap;
-  min-width: 42vw;
+  min-width: 362px;
   min-height: 100%;
   place-content: center flex-start;
   place-items: center flex-start;
@@ -101,7 +102,7 @@
 }
 
 .contentContainer:hover {
-  transform: scale(1.1);
+  transform: scale(1.025);
   border-color: rgb(0, 145, 200);
   box-shadow: 2px 2px 2px 2px rgba(0, 145, 200, 0.5);
   background: rgb(0, 145, 200);
@@ -164,7 +165,7 @@
 .menuImage1:hover,
 .menuImage2:hover,
 .menuImage3:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   border-color: rgb(0, 145, 200);
   box-shadow: 2px 2px 2px 2px rgba(0, 145, 200, 0.5);
 }
